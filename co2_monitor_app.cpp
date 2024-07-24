@@ -120,8 +120,8 @@ extern "C" int32_t co2_monitor_app(void* p) {
             if(event.type == InputTypePress && event.key == InputKeyBack) {
                 running = false;
             } else if(event.type == InputTypeLong && event.key == InputKeyUp) {
-                // Calibrate to 420ppm (average outside value)
-                scd30_worker.calibrate_to(420);
+                // Calibrate to 424ppm (average outside value)
+                scd30_worker.calibrate_to(424);
             }
         }
 
